@@ -56,6 +56,13 @@ a {
   }
 }
 
+a.anchor-content {
+  position: relative;
+  top: 220px;
+  display: block;
+  opacity: 0;
+}
+
 .header {
   position: relative;
   padding-top: 3em;
@@ -229,13 +236,6 @@ p > a {
   position: relative;
 }
 
-a.anchor-content {
-  position: relative;
-  top: -50px;
-  display: block;
-  opacity: 0;
-}
-
 h1 span {
   display: block;
   font-weight: 400;
@@ -296,7 +296,7 @@ h1 span {
   font-size: calc(32px + (72 - 32) * ((100vw - 320px) / (1680 - 320)));
 }
 
-.projects-row {
+.content-row {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -314,6 +314,7 @@ h1 span {
 
 .c-4 {
   width: 33.3333%;
+  cursor: crosshair;
 }
 
 @media only screen and (max-width: 48em) {
@@ -328,6 +329,89 @@ h1 span {
 
 @media only screen and (max-width: 48em) {
   .c-8 {
+    width: 100%;
+  }
+}
+
+.content .content-text {
+  padding-left: 25%;
+}
+
+@media only screen and (max-width: 48em) {
+  .content .content-text {
+    padding-left: 0;
+  }
+}
+
+figure {
+  text-align: right;
+}
+
+.p-1 {
+  margin: 4.5em 0 4.5em 0;
+}
+
+@media only screen and (max-width: 48em) {
+  .p-1 {
+    margin-top: 3.375em;
+    margin-bottom: 3.375em;
+  }
+}
+
+@media only screen and (max-width: 30em) {
+  .p-1 {
+    margin-top: 2.25em;
+    margin-bottom: 2.25em;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+.content-row.details {
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+h2 > a {
+  text-decoration: underline;
+  font-size: 3rem;
+  font-size: calc(28px + (48 - 28) * ((100vw - 320px) / (1680 - 320)));
+  line-height: 1.15em;
+}
+
+.c-3 {
+  width: 25%;
+}
+
+@media only screen and (max-width: 48em) {
+  .c-3 {
+    width: 100%;
+  }
+}
+
+ul {
+  margin-bottom: 1.5em;
+  list-style: none;
+}
+
+ul li {
+  margin-bottom: 0;
+  font-size: 1.5rem;
+  font-size: calc(20px + (24 - 20) * ((100vw - 320px) / (1680 - 320)));
+  line-height: 1.35em;
+}
+
+.c-6 {
+  width: 50%;
+}
+
+@media only screen and (max-width: 48em) {
+  .c-6 {
     width: 100%;
   }
 }

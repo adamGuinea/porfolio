@@ -55,24 +55,43 @@ class App extends React.Component {
         </header>
         <main className="main">
           <section className="section">
+            <a id="projects" class="anchor-content scrollspy" href="" />
             <div className="container">
               <div className="content">
                 <div className="content-right">
                   <h1 className="text-uppercase">
                     Projects
-                    <a id="projects" class="anchor-content scrollspy" href="" />
                     <span>2018-2019</span>
                   </h1>
                 </div>
                 <div className="content-left">
-                  <ul class="collapsible">
+                  <ul className="collapsible">
                     <li>
-                      <div class="collapsible-header">Stellahart</div>
-                      <div class="collapsible-body">
-                        <div className="projects-row">
-                          {/* <div > */}
-                          <img className="c-4" src="stellahart1.png" alt="" />
-                          {/* </div> */}
+                      <div className="collapsible-header">Stellahart</div>
+                      <div className="collapsible-body">
+                        <div className="content-row">
+                          <div className="c-4">
+                            <p>
+                              Github: {""}
+                              <a
+                                href="https://github.com/adamGuinea/stellahart"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                              >
+                                Stellahart
+                              </a>
+                            </p>
+                            <p>
+                              Website: {""}
+                              <a
+                                href="https://stellahart-next.herokuapp.com/items"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                              >
+                                stellahart-next
+                              </a>
+                            </p>
+                          </div>
                           <div className="c-8">
                             <p>
                               An online store using a React front-end and Apollo
@@ -90,18 +109,213 @@ class App extends React.Component {
                       </div>
                     </li>
                     <li>
-                      <div class="collapsible-header">TheLongWayHome</div>
-                      <div class="collapsible-body">
-                        <span>Lorem ipsum dolor sit amet.</span>
+                      <div className="collapsible-header">TheLongWayHome</div>
+                      <div className="collapsible-body">
+                        <div className="content-row">
+                          <div className="c-4">
+                            <p>
+                              Github: {""}
+                              <a
+                                href="https://github.com/adamGuinea/thelongwayhome"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                              >
+                                thelongwayhome
+                              </a>
+                            </p>
+                            <p>
+                              Website: {""}
+                              <a
+                                href="https://thelongwayhome.herokuapp.com"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                              >
+                                thelongwayhome
+                              </a>
+                            </p>
+                          </div>
+                          <div className="c-8">
+                            <p>
+                              JavaScript site in Node JS that allows users to
+                              rate and discuss their favorite campsites using
+                              uploaded photos and geolocation for embedded maps.
+                              This was my first introduction to Express routing
+                              and data management with MongoDB.
+                            </p>
+                          </div>
+                        </div>
                       </div>
                     </li>
                     <li>
-                      <div class="collapsible-header">Chatta</div>
-                      <div class="collapsible-body">
-                        <span>Lorem ipsum dolor sit amet.</span>
+                      <div className="collapsible-header">MailPlan</div>
+                      <div className="collapsible-body">
+                        <div className="content-row">
+                          <div className="c-4">
+                            <p>
+                              Github: {""}
+                              <a
+                                href="https://github.com/adamGuinea/mailPlan"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                              >
+                                MailPlan
+                              </a>
+                            </p>
+                            <p>
+                              Website: {""}
+                              <a
+                                href="https://mailplan.herokuapp.com"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                              >
+                                mailplan
+                              </a>
+                            </p>
+                          </div>
+                          <div className="c-8">
+                            <p>
+                              A surveyor for email marketing campaigns in Node
+                              JS. My API uses Express routing and Mongo DB for
+                              data management. Authentication is handled by
+                              Google and Webhooks communicate customer feedback
+                              to my users. The client side again uses React,
+                              because I love it, and Redux for state management.
+                              These apps along with others have improved my
+                              understanding of responsive CSS design and how the
+                              layers of a project come together through
+                              effective architecture.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="collapsible-header">Chatta</div>
+                      <div className="collapsible-body">
+                        <div className="content-row">
+                          <div className="c-4">
+                            <p>
+                              Github: {""}
+                              <a
+                                href="https://github.com/adamGuinea/chatta"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                              >
+                                Chatta
+                              </a>
+                            </p>
+                            <p>
+                              Website: {""}
+                              <a
+                                href="https://chatta-client.herokuapp.com"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                              >
+                                chatta-client
+                              </a>
+                            </p>
+                          </div>
+                          <div className="c-8">
+                            <p>
+                              A surveyor for email marketing campaigns in Node
+                              JS. My API uses Express routing and Mongo DB for
+                              data management. Authentication is handled by
+                              Google and Webhooks communicate customer feedback
+                              to my users. The client side again uses React,
+                              because I love it, and Redux for state management.
+                              These apps along with others have improved my
+                              understanding of responsive CSS design and how the
+                              layers of a project come together through
+                              effective architecture.
+                            </p>
+                          </div>
+                        </div>
                       </div>
                     </li>
                   </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section className="section">
+            <a id="life" href="" className="anchor-content scrollspy" />
+            <div className="container">
+              <div className="content">
+                <div className="content-right">
+                  <h1 className="text-uppercase">
+                    Life
+                    <span>1991-2019</span>
+                  </h1>
+                </div>
+                <div className="content-left">
+                  <div className="content-text">
+                    <p>
+                      Developing slick user interfaces and acquiring new skills
+                      along the way is exciting to me. I began learning software
+                      development in late 2017 because I wanted to build
+                      something of my own that was future orientated and easily
+                      accessible. Since then I have been writing and deploying
+                      my own apps privately and have been continually teaching
+                      myself about it.
+                    </p>
+                    <p>
+                      My passion for programming started while I was a
+                      mechanical engineer contracting at tech companies across
+                      London. I found it so interesting that I’ve decided to go
+                      through an intensive study period and change my career to
+                      software development. My skill set broadens with every new
+                      project.
+                    </p>
+                  </div>
+                  <figure className="p-1">
+                    <picture>
+                      <source
+                        media={{ maxWidth: 22.5 }}
+                        srcSet="/profile-pic.jpg"
+                      />
+                      <source
+                        media={{ maxWidth: "48em" }}
+                        srcSet="/profile-pic.jpg"
+                      />
+                      <img src="/profile-pic.jpg" alt="profile" />
+                    </picture>
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section className="section">
+            <a id="contact" href="" className="anchor-content scrollspy" />
+            <div className="container">
+              <div className="content">
+                <div className="content-right">
+                  <h1 className="text-uppercase">Contact</h1>
+                </div>
+                <div className="content-left">
+                  <div className="content-text">
+                    <h2>
+                      <a href="mailto:adamguinea22@gmail.com">
+                        adamguinea22@gmail.com
+                      </a>
+                    </h2>
+                  </div>
+                </div>
+                <div className="content-left p-1">
+                  <div className="content-row details">
+                    <div className="c-3">
+                      <ul>
+                        <li>
+                          <a href="www.linkedin.com/in/adamguinea">LinkedIn</a>
+                        </li>
+                        <li>
+                          <a href="https://github.com/adamGuinea">Github</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div className="c-6">
+                      <p />
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
