@@ -21,6 +21,14 @@ body {
   list-style: none;
 }
 
+.nav a {
+  font-weight: 600;
+}
+
+.nav a:hover {
+  font-style: italic;
+}
+
 a {
   text-decoration: none;
   font-size: calc(20px + (24 - 20) * ((100vw - 320px) / (1680 - 320)));
@@ -45,9 +53,8 @@ a {
   font-size: calc(20px + (24 - 20) * ((100vw - 320px) / (1680 - 320)));
   z-index: 10;
   text-decoration: none;
-  opacity: 1;
-  -webkit-transition: 0.3s ease;
-  transition: 0.3s ease;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
 }
 
 @media only screen and (max-width: 48em) {
@@ -414,4 +421,24 @@ ul li {
   .c-6 {
     width: 100%;
   }
+}
+
+.c-3 ul {
+  text-decoration: underline;
+}
+
+.profile-footer {
+  position: relative;
+  text-align: right;
+}
+
+@media only screen and (max-width: 48em) {
+  .profile-footer {
+    text-align: center;
+  }
+}
+
+.inline-list li {
+  display: inline-block;
+  margin-left: 0.25em;
 }

@@ -2,16 +2,40 @@ import React from "react";
 import M from "materialize-css";
 import "./App.css";
 
+let hrefLink = "#";
+
 class App extends React.Component {
+  constructor(props) {
+    super(props);
+    // this.mouseOver = this.mouseOver.bind(this);
+    // this.mouseOut = this.mouseOut.bind(this);
+    this.state = { isTop: true };
+    this.state = { hover: false };
+  }
+
+  mouseOver = () => {
+    this.setState({ hover: true });
+  };
+  mouseOut = () => {
+    this.setState({ hover: false });
+  };
+
   componentDidMount() {
     M.AutoInit();
+    document.addEventListener("scroll", () => {
+      const isTop = window.scrollY < 200;
+      if (isTop !== this.state.isTop) {
+        this.setState({ isTop });
+      }
+    });
   }
+
   render() {
     return (
       <div id="page" className="scrollspy">
         <header className="header">
           <a className="link-site scrollspy" href="#page">
-            Adam Guinea
+            {this.state.isTop ? null : "Adam Guinea"}
           </a>
           <div className="nav">
             <ul>
@@ -55,7 +79,13 @@ class App extends React.Component {
         </header>
         <main className="main">
           <section className="section">
-            <a id="projects" class="anchor-content scrollspy" href="" />
+            <a
+              id="projects"
+              className="anchor-content scrollspy"
+              href={hrefLink}
+            >
+              &nbsp;
+            </a>
             <div className="container">
               <div className="content">
                 <div className="content-right">
@@ -70,7 +100,11 @@ class App extends React.Component {
                       <div className="collapsible-header">Stellahart</div>
                       <div className="collapsible-body">
                         <div className="content-row">
-                          <div className="c-4">
+                          <div
+                            className="c-4"
+                            onMouseEnter={this.mouseOver.bind(this)}
+                            onMouseLeave={this.mouseOut.bind(this)}
+                          >
                             <p>
                               Github: {""}
                               <a
@@ -91,6 +125,19 @@ class App extends React.Component {
                                 stellahart-next
                               </a>
                             </p>
+                            {this.state.hover ? (
+                              <picture>
+                                <source
+                                  media={{ maxWidth: 11 }}
+                                  srcSet="/stellahart.png"
+                                />
+                                <source
+                                  media={{ maxWidth: "20em" }}
+                                  srcSet="/stellahart.png"
+                                />
+                                <img src="/stellahart.png" alt="store-page" />
+                              </picture>
+                            ) : null}
                           </div>
                           <div className="c-8">
                             <p>
@@ -112,7 +159,11 @@ class App extends React.Component {
                       <div className="collapsible-header">TheLongWayHome</div>
                       <div className="collapsible-body">
                         <div className="content-row">
-                          <div className="c-4">
+                          <div
+                            className="c-4"
+                            onMouseEnter={this.mouseOver.bind(this)}
+                            onMouseLeave={this.mouseOut.bind(this)}
+                          >
                             <p>
                               Github: {""}
                               <a
@@ -133,6 +184,22 @@ class App extends React.Component {
                                 thelongwayhome
                               </a>
                             </p>
+                            {this.state.hover ? (
+                              <picture>
+                                <source
+                                  media={{ maxWidth: 11 }}
+                                  srcSet="/tlwh-index-page.png"
+                                />
+                                <source
+                                  media={{ maxWidth: "20em" }}
+                                  srcSet="/tlwh-index-page.png"
+                                />
+                                <img
+                                  src="/tlwh-index-page.png"
+                                  alt="index-page"
+                                />
+                              </picture>
+                            ) : null}
                           </div>
                           <div className="c-8">
                             <p>
@@ -150,7 +217,11 @@ class App extends React.Component {
                       <div className="collapsible-header">MailPlan</div>
                       <div className="collapsible-body">
                         <div className="content-row">
-                          <div className="c-4">
+                          <div
+                            className="c-4"
+                            onMouseEnter={this.mouseOver.bind(this)}
+                            onMouseLeave={this.mouseOut.bind(this)}
+                          >
                             <p>
                               Github: {""}
                               <a
@@ -171,6 +242,22 @@ class App extends React.Component {
                                 mailplan
                               </a>
                             </p>
+                            {this.state.hover ? (
+                              <picture>
+                                <source
+                                  media={{ maxWidth: 11 }}
+                                  srcSet="/mailplan-landing.png"
+                                />
+                                <source
+                                  media={{ maxWidth: "20em" }}
+                                  srcSet="/mailplan-landing.png"
+                                />
+                                <img
+                                  src="/mailplan-landing.png"
+                                  alt="mailplan-landing"
+                                />
+                              </picture>
+                            ) : null}
                           </div>
                           <div className="c-8">
                             <p>
@@ -193,7 +280,11 @@ class App extends React.Component {
                       <div className="collapsible-header">Chatta</div>
                       <div className="collapsible-body">
                         <div className="content-row">
-                          <div className="c-4">
+                          <div
+                            className="c-4"
+                            onMouseEnter={this.mouseOver.bind(this)}
+                            onMouseLeave={this.mouseOut.bind(this)}
+                          >
                             <p>
                               Github: {""}
                               <a
@@ -214,6 +305,19 @@ class App extends React.Component {
                                 chatta-client
                               </a>
                             </p>
+                            {this.state.hover ? (
+                              <picture>
+                                <source
+                                  media={{ maxWidth: 11 }}
+                                  srcSet="/chatta-feed.png"
+                                />
+                                <source
+                                  media={{ maxWidth: "20em" }}
+                                  srcSet="/chatta-feed.png"
+                                />
+                                <img src="/chatta-feed.png" alt="chatta-feed" />
+                              </picture>
+                            ) : null}
                           </div>
                           <div className="c-8">
                             <p>
@@ -238,7 +342,9 @@ class App extends React.Component {
             </div>
           </section>
           <section className="section">
-            <a id="life" href="" className="anchor-content scrollspy" />
+            <a id="life" href={hrefLink} className="anchor-content scrollspy">
+              &nbsp;
+            </a>
             <div className="container">
               <div className="content">
                 <div className="content-right">
@@ -285,7 +391,13 @@ class App extends React.Component {
             </div>
           </section>
           <section className="section">
-            <a id="contact" href="" className="anchor-content scrollspy" />
+            <a
+              id="contact"
+              href={hrefLink}
+              className="anchor-content scrollspy"
+            >
+              &nbsp;
+            </a>
             <div className="container">
               <div className="content">
                 <div className="content-right">
@@ -305,15 +417,33 @@ class App extends React.Component {
                     <div className="c-3">
                       <ul>
                         <li>
-                          <a href="www.linkedin.com/in/adamguinea">LinkedIn</a>
+                          <a
+                            href="https://linkedin.com/in/adamguinea"
+                            rel="noopener noreferrer"
+                            target="_blank"
+                          >
+                            LinkedIn
+                          </a>
                         </li>
                         <li>
-                          <a href="https://github.com/adamGuinea">Github</a>
+                          <a
+                            href="https://github.com/adamGuinea"
+                            rel="noopener noreferrer"
+                            target="_blank"
+                          >
+                            Github
+                          </a>
                         </li>
                       </ul>
                     </div>
                     <div className="c-6">
-                      <p />
+                      <p>
+                        Curiosity, along with transferable experience from my
+                        past career is what I could bring to your next project.
+                        With my determination, passion for software development
+                        and ability to adapt to new situations, I think I could
+                        be a great new addition to your team.
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -321,6 +451,16 @@ class App extends React.Component {
             </div>
           </section>
         </main>
+        <div className="profile-footer">
+          <div className="container">
+            <ul className="inline-list">
+              <li>
+                <i className="material-icons">copyright</i>
+                2019
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     );
   }
