@@ -7,8 +7,6 @@ let hrefLink = "#";
 class App extends React.Component {
   constructor(props) {
     super(props);
-    // this.mouseOver = this.mouseOver.bind(this);
-    // this.mouseOut = this.mouseOut.bind(this);
     this.state = { isTop: true };
     this.state = { hover: false };
   }
@@ -30,11 +28,18 @@ class App extends React.Component {
     });
   }
 
+  componentDidUpdate() {
+    M.AutoInit();
+  }
+
   render() {
     return (
       <div id="page" className="scrollspy">
         <header className="header">
-          <a className="link-site scrollspy" href="#page">
+          <a className="link-site" href="#page">
+            {this.state.isTop ? null : (
+              <i className="tiny material-icons">brightness_1</i>
+            )}
             {this.state.isTop ? null : "Adam Guinea"}
           </a>
           <div className="nav">
@@ -97,7 +102,14 @@ class App extends React.Component {
                 <div className="content-left">
                   <ul className="collapsible">
                     <li>
-                      <div className="collapsible-header">Stellahart</div>
+                      <div className="collapsible-header">
+                        Stellahart{" "}
+                        <span>
+                          <i className="material-icons arrow-rotates">
+                            arrow_downward
+                          </i>
+                        </span>
+                      </div>
                       <div className="collapsible-body">
                         <div className="content-row">
                           <div
@@ -135,7 +147,12 @@ class App extends React.Component {
                                   media={{ maxWidth: "20em" }}
                                   srcSet="/stellahart.png"
                                 />
-                                <img src="/stellahart.png" alt="store-page" />
+                                <img
+                                  className="materialboxed"
+                                  width="650"
+                                  src="/stellahart.png"
+                                  alt="store-page"
+                                />
                               </picture>
                             ) : null}
                           </div>
@@ -146,17 +163,26 @@ class App extends React.Component {
                               MySQL database with Prisma as the interface layer
                               for CRUD operations, as well as GraphQL Yoga to
                               send email and handle authentication logic.
-                              Payment processing is handled with Stripe. Getting
-                              this app through testing with Jest and deployed
-                              required collaboration with others and diving into
-                              previously unknown technologies.
+                              Payment processing is handled with Stripe.
+                            </p>
+                            <p>
+                              Getting this app through testing with Jest and
+                              deployed required collaboration with others and
+                              diving into previously unknown technologies.
                             </p>
                           </div>
                         </div>
                       </div>
                     </li>
                     <li>
-                      <div className="collapsible-header">TheLongWayHome</div>
+                      <div className="collapsible-header">
+                        TheLongWayHome{" "}
+                        <span>
+                          <i className="material-icons arrow-rotates">
+                            arrow_downward
+                          </i>
+                        </span>
+                      </div>
                       <div className="collapsible-body">
                         <div className="content-row">
                           <div
@@ -195,6 +221,8 @@ class App extends React.Component {
                                   srcSet="/tlwh-index-page.png"
                                 />
                                 <img
+                                  className="materialboxed"
+                                  width="650"
                                   src="/tlwh-index-page.png"
                                   alt="index-page"
                                 />
@@ -203,18 +231,27 @@ class App extends React.Component {
                           </div>
                           <div className="c-8">
                             <p>
-                              JavaScript site in Node JS that allows users to
-                              rate and discuss their favorite campsites using
-                              uploaded photos and geolocation for embedded maps.
-                              This was my first introduction to Express routing
-                              and data management with MongoDB.
+                              JavaScript site written in Node JS that allows
+                              users to post information about their favorite
+                              campsites. Google's API provides geolocation and
+                              displays a map for uploaded photos. Users can
+                              follow each other and receive notifications about
+                              their friends and activity, as well as rate and
+                              comment on posts.
                             </p>
                           </div>
                         </div>
                       </div>
                     </li>
                     <li>
-                      <div className="collapsible-header">MailPlan</div>
+                      <div className="collapsible-header">
+                        MailPlan{" "}
+                        <span>
+                          <i className="material-icons arrow-rotates">
+                            arrow_downward
+                          </i>
+                        </span>
+                      </div>
                       <div className="collapsible-body">
                         <div className="content-row">
                           <div
@@ -246,14 +283,16 @@ class App extends React.Component {
                               <picture>
                                 <source
                                   media={{ maxWidth: 11 }}
-                                  srcSet="/mailplan-landing.png"
+                                  srcSet="/mailplan-dashboard.png"
                                 />
                                 <source
                                   media={{ maxWidth: "20em" }}
-                                  srcSet="/mailplan-landing.png"
+                                  srcSet="/mailplan-dashboard.png"
                                 />
                                 <img
-                                  src="/mailplan-landing.png"
+                                  className="materialboxed"
+                                  width="650"
+                                  src="/mailplan-dashboard.png"
                                   alt="mailplan-landing"
                                 />
                               </picture>
@@ -267,8 +306,10 @@ class App extends React.Component {
                               Google and Webhooks communicate customer feedback
                               to my users. The client side again uses React,
                               because I love it, and Redux for state management.
-                              These apps along with others have improved my
-                              understanding of responsive CSS design and how the
+                            </p>
+                            <p>
+                              This app along with others improved my
+                              understanding of responsive design and how the
                               layers of a project come together through
                               effective architecture.
                             </p>
@@ -277,7 +318,14 @@ class App extends React.Component {
                       </div>
                     </li>
                     <li>
-                      <div className="collapsible-header">Chatta</div>
+                      <div className="collapsible-header">
+                        Chatta{" "}
+                        <span>
+                          <i className="material-icons arrow-rotates">
+                            arrow_downward
+                          </i>
+                        </span>
+                      </div>
                       <div className="collapsible-body">
                         <div className="content-row">
                           <div
@@ -315,22 +363,25 @@ class App extends React.Component {
                                   media={{ maxWidth: "20em" }}
                                   srcSet="/chatta-feed.png"
                                 />
-                                <img src="/chatta-feed.png" alt="chatta-feed" />
+                                <img
+                                  className="materialboxed"
+                                  width="650"
+                                  id="img"
+                                  src="/chatta-feed.png"
+                                  alt="chatta-feed"
+                                />
                               </picture>
                             ) : null}
                           </div>
                           <div className="c-8">
                             <p>
-                              A surveyor for email marketing campaigns in Node
-                              JS. My API uses Express routing and Mongo DB for
-                              data management. Authentication is handled by
-                              Google and Webhooks communicate customer feedback
-                              to my users. The client side again uses React,
-                              because I love it, and Redux for state management.
-                              These apps along with others have improved my
-                              understanding of responsive CSS design and how the
-                              layers of a project come together through
-                              effective architecture.
+                              Message board using a MERN stack. Hosted on two
+                              different servers with create-react-app powering
+                              the front-end and a Node API handling
+                              authentication and token authorization on the
+                              backend. Users can choose an avatar on signup and
+                              posts are displayed chronologically with full CRUD
+                              operations.
                             </p>
                           </div>
                         </div>

@@ -55,12 +55,21 @@ a {
   text-decoration: none;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
+  font-weight: 600;
 }
 
-@media only screen and (max-width: 48em) {
+.link-site:hover {
+  font-style: italic;
+}
+
+@media only screen and (max-width: 54em) {
   .link-site {
     opacity: 0;
   }
+}
+
+.tiny {
+  color: #ae48f2;
 }
 
 a.anchor-content {
@@ -297,10 +306,36 @@ h1 span {
 
 .collapsible-header {
   border: none;
+  justify-content: space-between;
   background-color: white;
   position: relative;
   font-size: 2rem;
   font-size: calc(32px + (72 - 32) * ((100vw - 320px) / (1680 - 320)));
+}
+
+.collapsible-header i {
+  position: relative;
+  top: 12px;
+  font-size: 60px;
+  transition: all 0.75s 0.25s;
+  transform: rotate(0);
+}
+
+.arrow-rotates {
+  -moz-transition: all 1s linear;
+  -webkit-transition: all 1s linear;
+  transition: all 1s linear;
+}
+
+.arrow-rotates.rotate {
+  -moz-transition: rotate(180deg);
+  -webkit-transition: rotate(180deg);
+  transition: rotate(180deg);
+}
+
+li.active .arrow-rotates {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .content-row {
@@ -393,6 +428,7 @@ h2 > a {
 
 .c-3 {
   width: 25%;
+  margin-top: 0.45em;
 }
 
 @media only screen and (max-width: 48em) {
@@ -415,6 +451,7 @@ ul li {
 
 .c-6 {
   width: 50%;
+  margin-top: 0;
 }
 
 @media only screen and (max-width: 48em) {
@@ -441,4 +478,5 @@ ul li {
 .inline-list li {
   display: inline-block;
   margin-left: 0.25em;
+  font-weight: 600;
 }
