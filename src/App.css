@@ -305,37 +305,48 @@ h1 span {
 }
 
 .collapsible-header {
+  display: flex;
   border: none;
-  justify-content: space-between;
-  background-color: white;
+  padding: 0;
   position: relative;
-  font-size: 2rem;
   font-size: calc(32px + (72 - 32) * ((100vw - 320px) / (1680 - 320)));
 }
 
-.collapsible-header i {
-  position: relative;
-  top: 12px;
-  font-size: 60px;
-  transition: all 0.75s 0.25s;
-  transform: rotate(0);
+.collapsible-header::after {
+  content: "\2193";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 12px;
+  font-size: 3rem;
 }
 
-.arrow-rotates {
-  -moz-transition: all 1s linear;
-  -webkit-transition: all 1s linear;
-  transition: all 1s linear;
+li.active .collapsible-header::after {
+  content: "\2191";
 }
 
-.arrow-rotates.rotate {
-  -moz-transition: rotate(180deg);
-  -webkit-transition: rotate(180deg);
-  transition: rotate(180deg);
+@media only screen and (max-width: 48em) {
+  .collapsible-header::after {
+    font-size: 2rem;
+  }
 }
 
-li.active .arrow-rotates {
-  -webkit-transform: rotate(180deg);
-  transform: rotate(180deg);
+@media only screen and (max-width: 30em) {
+  .collapsible-header::after {
+    display: none;
+  }
+}
+
+.label {
+  align-self: flex-end;
+  font-size: calc(20px + (24 - 20) * ((100vw - 320px) / (1680 - 320)));
+}
+
+@media only screen and (max-width: 30em) {
+  .label {
+    display: block;
+    /* margin: -6px 0 12px; */
+  }
 }
 
 .content-row {

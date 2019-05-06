@@ -101,14 +101,7 @@ class App extends React.Component {
                 <div className="content-left">
                   <ul className="collapsible">
                     <li>
-                      <div className="collapsible-header">
-                        Stellahart{" "}
-                        <span>
-                          <i className="material-icons arrow-rotates">
-                            arrow_downward
-                          </i>
-                        </span>
-                      </div>
+                      <div className="collapsible-header">Stellahart </div>
                       <div className="collapsible-body">
                         <div className="content-row">
                           <div
@@ -174,14 +167,7 @@ class App extends React.Component {
                       </div>
                     </li>
                     <li>
-                      <div className="collapsible-header">
-                        LongWayHome{" "}
-                        <span>
-                          <i className="material-icons arrow-rotates">
-                            arrow_downward
-                          </i>
-                        </span>
-                      </div>
+                      <div className="collapsible-header">TheLongWayHome </div>
                       <div className="collapsible-body">
                         <div className="content-row">
                           <div
@@ -235,27 +221,20 @@ class App extends React.Component {
                               campsites. Google's API provides geolocation and
                               displays a map for uploaded photos. Users can
                               follow each other and receive notifications about
-                              their friends and activity, as well as rate and
+                              their friends activity, as well as rate and
                               comment on posts.
                             </p>
                             <p>
-                              I love travelling, so once I got a handle on
-                              routing and Express this was the first significant
-                              app I built.
+                              I love exploring new places, so once I got a
+                              handle on databases and routing this was the first
+                              significant app I built.
                             </p>
                           </div>
                         </div>
                       </div>
                     </li>
                     <li>
-                      <div className="collapsible-header">
-                        MailPlan{" "}
-                        <span>
-                          <i className="material-icons arrow-rotates">
-                            arrow_downward
-                          </i>
-                        </span>
-                      </div>
+                      <div className="collapsible-header">MailPlan </div>
                       <div className="collapsible-body">
                         <div className="content-row">
                           <div
@@ -322,14 +301,7 @@ class App extends React.Component {
                       </div>
                     </li>
                     <li>
-                      <div className="collapsible-header">
-                        Chatta{" "}
-                        <span>
-                          <i className="material-icons arrow-rotates">
-                            arrow_downward
-                          </i>
-                        </span>
-                      </div>
+                      <div className="collapsible-header">Chatta </div>
                       <div className="collapsible-body">
                         <div className="content-row">
                           <div
@@ -382,10 +354,69 @@ class App extends React.Component {
                               Message board using a MERN stack. Hosted on two
                               different servers with create-react-app powering
                               the front-end and a Node API handling
-                              authentication and token authorization on the
-                              backend. Users can choose an avatar on signup and
+                              authentication and token authorization on the back
+                              end. Users can choose an avatar on signup and
                               posts are displayed chronologically with full CRUD
                               operations.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="collapsible-header">
+                        CRM
+                        <em className="label">mobile</em>
+                      </div>
+                      <div className="collapsible-body">
+                        <div className="content-row">
+                          <div
+                            className="c-4"
+                            onMouseEnter={this.mouseOver.bind(this)}
+                            onMouseLeave={this.mouseOut.bind(this)}
+                          >
+                            <p>
+                              Github: {""}
+                              <a
+                                href="https://github.com/adamGuinea/CRM"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                              >
+                                CRM
+                              </a>
+                            </p>
+
+                            {this.state.hover ? (
+                              <picture>
+                                <source
+                                  media={{ maxWidth: 11 }}
+                                  srcSet="/CRM-screenshot.png"
+                                />
+                                <source
+                                  media={{ maxWidth: "20em" }}
+                                  srcSet="/CRM-screenshot.png"
+                                />
+                                <img
+                                  className="materialboxed"
+                                  width="650"
+                                  id="img"
+                                  src="/CRM-screenshot.png"
+                                  alt="chatta-feed"
+                                />
+                              </picture>
+                            ) : null}
+                          </div>
+                          <div className="c-8">
+                            <p>
+                              A CRM tool for my online store written in
+                              react-native, with Firebase handling login and
+                              read/write permissions.
+                            </p>
+                            <p>
+                              A user can store information about friends or
+                              customers where click through calls, email, and
+                              SMS make it easy to get in touch. Contact details
+                              are stored by name and the company they work for.
                             </p>
                           </div>
                         </div>
