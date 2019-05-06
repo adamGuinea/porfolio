@@ -7,8 +7,7 @@ let hrefLink = "#";
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { isTop: true };
-    this.state = { hover: false };
+    this.state = { isTop: true, hover: false };
   }
 
   mouseOver = () => {
@@ -176,7 +175,7 @@ class App extends React.Component {
                     </li>
                     <li>
                       <div className="collapsible-header">
-                        TheLongWayHome{" "}
+                        LongWayHome{" "}
                         <span>
                           <i className="material-icons arrow-rotates">
                             arrow_downward
@@ -238,6 +237,11 @@ class App extends React.Component {
                               follow each other and receive notifications about
                               their friends and activity, as well as rate and
                               comment on posts.
+                            </p>
+                            <p>
+                              I love travelling, so once I got a handle on
+                              routing and Express this was the first significant
+                              app I built.
                             </p>
                           </div>
                         </div>
@@ -491,9 +495,6 @@ class App extends React.Component {
                       <p>
                         Curiosity, along with transferable experience from my
                         past career is what I could bring to your next project.
-                        With my determination, passion for software development
-                        and ability to adapt to new situations, I think I could
-                        be a great new addition to your team.
                       </p>
                     </div>
                   </div>
