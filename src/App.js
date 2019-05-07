@@ -59,7 +59,7 @@ class App extends React.Component {
               <div className="content content-100">
                 <div className="content-right">
                   <h1 className="text-uppercase no-margin">Adam Guinea</h1>
-                  <h2 className="subheader">
+                  <h2 className="sub-header">
                     Fitter turned Web Dev.
                     <br />
                     Learning every day.
@@ -72,8 +72,9 @@ class App extends React.Component {
                         rel="noopener noreferrer"
                         target="_blank"
                       >
-                        MailPlan, bulk email surveyor.
+                        MailPlan, bulk email surveyor
                       </a>
+                      .
                     </p>
                   </div>
                 </div>
@@ -150,7 +151,7 @@ class App extends React.Component {
                           </div>
                           <div className="c-8">
                             <p>
-                              An online store using a React front-end and Apollo
+                              An online store using a React front end and Apollo
                               Client to handle data caching. This store uses a
                               MySQL database with Prisma as the interface layer
                               for CRUD operations, as well as GraphQL Yoga to
@@ -199,16 +200,16 @@ class App extends React.Component {
                               <picture>
                                 <source
                                   media={{ maxWidth: 11 }}
-                                  srcSet="/tlwh-index-page.png"
+                                  srcSet="/tlwh-show-page.png"
                                 />
                                 <source
                                   media={{ maxWidth: "20em" }}
-                                  srcSet="/tlwh-index-page.png"
+                                  srcSet="/tlwh-show-page.png"
                                 />
                                 <img
                                   className="materialboxed"
                                   width="650"
-                                  src="/tlwh-index-page.png"
+                                  src="/tlwh-show-page.png"
                                   alt="index-page"
                                 />
                               </picture>
@@ -222,7 +223,7 @@ class App extends React.Component {
                               displays a map for uploaded photos. Users can
                               follow each other and receive notifications about
                               their friends activity, as well as rate and
-                              comment on posts.
+                              comment on posts with AJAX requests.
                             </p>
                             <p>
                               I love exploring new places, so once I got a
@@ -287,14 +288,75 @@ class App extends React.Component {
                               JS. My API uses Express routing and Mongo DB for
                               data management. Authentication is handled by
                               Google and Webhooks communicate customer feedback
-                              to my users. The client side again uses React,
+                              to the user. The client side again uses React,
                               because I love it, and Redux for state management.
                             </p>
                             <p>
-                              This app along with others improved my
+                              This app along with others required an
                               understanding of responsive design and how the
                               layers of a project come together through
                               effective architecture.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="collapsible-header">
+                        CRM
+                        <em className="label">mobile</em>
+                      </div>
+                      <div className="collapsible-body">
+                        <div className="content-row">
+                          <div
+                            className="c-4"
+                            onMouseEnter={this.mouseOver.bind(this)}
+                            onMouseLeave={this.mouseOut.bind(this)}
+                          >
+                            <p>
+                              Github: {""}
+                              <a
+                                href="https://github.com/adamGuinea/CRM"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                              >
+                                CRM
+                              </a>
+                            </p>
+                            {this.state.hover ? (
+                              <picture>
+                                <source
+                                  media={{ maxWidth: 11 }}
+                                  srcSet="/CRM-screenshot.png"
+                                />
+                                <source
+                                  media={{ maxWidth: "20em" }}
+                                  srcSet="/CRM-screenshot.png"
+                                />
+                                <img
+                                  className="materialboxed"
+                                  width="650"
+                                  id="img"
+                                  src="/CRM-screenshot.png"
+                                  alt="chatta-feed"
+                                />
+                              </picture>
+                            ) : null}
+                          </div>
+                          <div className="c-8">
+                            <p>
+                              I liked the idea of building a mobile app without
+                              having to learn a completely new language so I
+                              wrote a CRM tool for my online store in
+                              react-native. Firebase made handling login and
+                              read/write permissions <em>relatively</em> easy.
+                            </p>
+                            <p>
+                              A user can store information about friends or
+                              customers where click through calls, email, and
+                              SMS make it easy to get in touch. Contact details
+                              are accessible by person name as well as the
+                              company they work for.
                             </p>
                           </div>
                         </div>
@@ -353,70 +415,11 @@ class App extends React.Component {
                             <p>
                               Message board using a MERN stack. Hosted on two
                               different servers with create-react-app powering
-                              the front-end and a Node API handling
+                              the front end and a Node API handling
                               authentication and token authorization on the back
                               end. Users can choose an avatar on signup and
                               posts are displayed chronologically with full CRUD
                               operations.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div className="collapsible-header">
-                        CRM
-                        <em className="label">mobile</em>
-                      </div>
-                      <div className="collapsible-body">
-                        <div className="content-row">
-                          <div
-                            className="c-4"
-                            onMouseEnter={this.mouseOver.bind(this)}
-                            onMouseLeave={this.mouseOut.bind(this)}
-                          >
-                            <p>
-                              Github: {""}
-                              <a
-                                href="https://github.com/adamGuinea/CRM"
-                                rel="noopener noreferrer"
-                                target="_blank"
-                              >
-                                CRM
-                              </a>
-                            </p>
-
-                            {this.state.hover ? (
-                              <picture>
-                                <source
-                                  media={{ maxWidth: 11 }}
-                                  srcSet="/CRM-screenshot.png"
-                                />
-                                <source
-                                  media={{ maxWidth: "20em" }}
-                                  srcSet="/CRM-screenshot.png"
-                                />
-                                <img
-                                  className="materialboxed"
-                                  width="650"
-                                  id="img"
-                                  src="/CRM-screenshot.png"
-                                  alt="chatta-feed"
-                                />
-                              </picture>
-                            ) : null}
-                          </div>
-                          <div className="c-8">
-                            <p>
-                              A CRM tool for my online store written in
-                              react-native, with Firebase handling login and
-                              read/write permissions.
-                            </p>
-                            <p>
-                              A user can store information about friends or
-                              customers where click through calls, email, and
-                              SMS make it easy to get in touch. Contact details
-                              are stored by name and the company they work for.
                             </p>
                           </div>
                         </div>
@@ -463,13 +466,15 @@ class App extends React.Component {
                     <picture>
                       <source
                         media={{ maxWidth: 22.5 }}
-                        srcSet="/profile-pic.jpg"
+                        srcSet="/petra-profile.jpg"
                       />
                       <source
-                        media={{ maxWidth: "48em" }}
-                        srcSet="/profile-pic.jpg"
+                        media={{
+                          maxWidth: "48em"
+                        }}
+                        srcSet="/petra-profile.jpg"
                       />
-                      <img src="/profile-pic.jpg" alt="profile" />
+                      <img src="/petra-profile.jpg" alt="profile-pic" />
                     </picture>
                   </figure>
                 </div>
@@ -523,9 +528,11 @@ class App extends React.Component {
                       </ul>
                     </div>
                     <div className="c-6">
+                      <p>Shoot me an email </p>
                       <p>
-                        Curiosity, along with transferable experience from my
-                        past career is what I could bring to your next project.
+                        A genuine love of coding and a willingness to pick up
+                        new technologies is what I could bring to your next
+                        project.
                       </p>
                     </div>
                   </div>
