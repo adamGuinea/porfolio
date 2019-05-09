@@ -454,7 +454,7 @@ class App extends React.Component {
                       myself about it.
                     </p>
                     <p>
-                      My passion for programming started while I was a
+                      My passion for writing code started while I was a
                       mechanical engineer contracting at tech companies across
                       London. I found it so interesting that I’ve decided to go
                       through an intensive study period and change my career to
@@ -528,7 +528,7 @@ class App extends React.Component {
                       </ul>
                     </div>
                     <div className="c-6">
-                      <p>Shoot me an email </p>
+                      <p>Shoot me an email!</p>
                       <p>
                         A genuine love of coding and a willingness to pick up
                         new technologies is what I could bring to your next
