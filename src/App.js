@@ -528,7 +528,15 @@ class App extends React.Component {
                       </ul>
                     </div>
                     <div className="c-6">
-                      <p>Shoot me an email!</p>
+                      <p>
+                        Shoot me an email! or download my CV{" "}
+                        <em>
+                          <a href="/adamGuineaCV.pdf" download>
+                            here
+                          </a>
+                        </em>
+                        .
+                      </p>
                       <p>
                         A genuine love of coding and a willingness to pick up
                         new technologies is what I could bring to your next
