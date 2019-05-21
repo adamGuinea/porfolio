@@ -102,139 +102,6 @@ class App extends React.Component {
                 <div className="content-left">
                   <ul className="collapsible">
                     <li>
-                      <div className="collapsible-header">Stellahart </div>
-                      <div className="collapsible-body">
-                        <div className="content-row">
-                          <div
-                            className="c-4"
-                            onMouseEnter={this.mouseOver.bind(this)}
-                            onMouseLeave={this.mouseOut.bind(this)}
-                          >
-                            <p>
-                              Github: {""}
-                              <a
-                                href="https://github.com/adamGuinea/stellahart"
-                                rel="noopener noreferrer"
-                                target="_blank"
-                              >
-                                Stellahart
-                              </a>
-                            </p>
-                            <p>
-                              Website: {""}
-                              <a
-                                href="https://stellahart-next.herokuapp.com/items"
-                                rel="noopener noreferrer"
-                                target="_blank"
-                              >
-                                stellahart-next
-                              </a>
-                            </p>
-                            {this.state.hover ? (
-                              <picture>
-                                <source
-                                  media={{ maxWidth: 11 }}
-                                  srcSet="/stellahart.png"
-                                />
-                                <source
-                                  media={{ maxWidth: "20em" }}
-                                  srcSet="/stellahart.png"
-                                />
-                                <img
-                                  className="materialboxed"
-                                  width="650"
-                                  src="/stellahart.png"
-                                  alt="store-page"
-                                />
-                              </picture>
-                            ) : null}
-                          </div>
-                          <div className="c-8">
-                            <p>
-                              An online store using a React front end and Apollo
-                              Client to handle data caching. This store uses a
-                              MySQL database with Prisma as the interface layer
-                              for CRUD operations, as well as GraphQL Yoga to
-                              send email and handle authentication logic.
-                              Payment processing is handled with Stripe.
-                            </p>
-                            <p>
-                              Getting this app through testing with Jest and
-                              deployed required collaboration with others and
-                              diving into previously unknown technologies.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div className="collapsible-header">TheLongWayHome </div>
-                      <div className="collapsible-body">
-                        <div className="content-row">
-                          <div
-                            className="c-4"
-                            onMouseEnter={this.mouseOver.bind(this)}
-                            onMouseLeave={this.mouseOut.bind(this)}
-                          >
-                            <p>
-                              Github: {""}
-                              <a
-                                href="https://github.com/adamGuinea/thelongwayhome"
-                                rel="noopener noreferrer"
-                                target="_blank"
-                              >
-                                thelongwayhome
-                              </a>
-                            </p>
-                            <p>
-                              Website: {""}
-                              <a
-                                href="https://thelongwayhome.herokuapp.com"
-                                rel="noopener noreferrer"
-                                target="_blank"
-                              >
-                                thelongwayhome
-                              </a>
-                            </p>
-                            {this.state.hover ? (
-                              <picture>
-                                <source
-                                  media={{ maxWidth: 11 }}
-                                  srcSet="/tlwh-show-page.png"
-                                />
-                                <source
-                                  media={{ maxWidth: "20em" }}
-                                  srcSet="/tlwh-show-page.png"
-                                />
-                                <img
-                                  className="materialboxed"
-                                  width="650"
-                                  src="/tlwh-show-page.png"
-                                  alt="index-page"
-                                />
-                              </picture>
-                            ) : null}
-                          </div>
-                          <div className="c-8">
-                            <p>
-                              JavaScript site written in Node JS that allows
-                              users to post information about their favorite
-                              campsites. Google's API provides geolocation and
-                              displays a map for uploaded photos. Users can
-                              follow each other and receive notifications about
-                              their friends activity, as well as rate and
-                              comment on posts with AJAX requests.
-                            </p>
-                            <p>
-                              I love exploring new places, so once I got a
-                              handle on databases and routing this was the first
-                              significant app I built.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
                       <div className="collapsible-header">MailPlan </div>
                       <div className="collapsible-body">
                         <div className="content-row">
@@ -296,6 +163,141 @@ class App extends React.Component {
                               understanding of responsive design and how the
                               layers of a project come together through
                               effective architecture.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="collapsible-header">TheLongWayHome </div>
+                      <div className="collapsible-body">
+                        <div className="content-row">
+                          <div
+                            className="c-4"
+                            onMouseEnter={this.mouseOver.bind(this)}
+                            onMouseLeave={this.mouseOut.bind(this)}
+                          >
+                            <p>
+                              Github: {""}
+                              <a
+                                href="https://github.com/adamGuinea/thelongwayhome"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                              >
+                                thelongwayhome
+                              </a>
+                            </p>
+                            <p>
+                              Website: {""}
+                              <a
+                                href="https://thelongwayhome.herokuapp.com"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                              >
+                                thelongwayhome
+                              </a>
+                            </p>
+                            {this.state.hover ? (
+                              <picture>
+                                <source
+                                  media={{ maxWidth: 11 }}
+                                  srcSet="/tlwh-show-page.png"
+                                />
+                                <source
+                                  media={{ maxWidth: "20em" }}
+                                  srcSet="/tlwh-show-page.png"
+                                />
+                                <img
+                                  className="materialboxed"
+                                  width="650"
+                                  src="/tlwh-show-page.png"
+                                  alt="index-page"
+                                />
+                              </picture>
+                            ) : null}
+                          </div>
+                          <div className="c-8">
+                            <p>
+                              JavaScript site written in Node JS that allows
+                              users to post information about their favorite
+                              campsites. Google and Dark Sky's API provides
+                              geolocation, weather data, and displays a map for
+                              uploaded photos. Users can follow each other and
+                              receive notifications about their friends activity
+                              as well as rate and comment on posts with AJAX
+                              requests.
+                            </p>
+                            <p>
+                              I love exploring new places, so once I got a
+                              handle on databases and routing this was the first
+                              significant app I built.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li>
+                      <div className="collapsible-header">Stellahart </div>
+                      <div className="collapsible-body">
+                        <div className="content-row">
+                          <div
+                            className="c-4"
+                            onMouseEnter={this.mouseOver.bind(this)}
+                            onMouseLeave={this.mouseOut.bind(this)}
+                          >
+                            <p>
+                              Github: {""}
+                              <a
+                                href="https://github.com/adamGuinea/stellahart"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                              >
+                                Stellahart
+                              </a>
+                            </p>
+                            <p>
+                              Website: {""}
+                              <a
+                                href="https://stellahart-next.herokuapp.com/items"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                              >
+                                stellahart-next
+                              </a>
+                            </p>
+                            {this.state.hover ? (
+                              <picture>
+                                <source
+                                  media={{ maxWidth: 11 }}
+                                  srcSet="/stellahart.png"
+                                />
+                                <source
+                                  media={{ maxWidth: "20em" }}
+                                  srcSet="/stellahart.png"
+                                />
+                                <img
+                                  className="materialboxed"
+                                  width="650"
+                                  src="/stellahart.png"
+                                  alt="store-page"
+                                />
+                              </picture>
+                            ) : null}
+                          </div>
+                          <div className="c-8">
+                            <p>
+                              An online store using a React front end and Apollo
+                              Client to handle data caching. This store uses a
+                              MySQL database with Prisma as the interface layer
+                              for CRUD operations, as well as GraphQL Yoga to
+                              send email and handle authentication logic.
+                              Payment processing is handled with Stripe.
+                            </p>
+                            <p>
+                              Getting this app through testing with Jest and
+                              deployed required collaboration with others and
+                              diving into previously unknown technologies.
                             </p>
                           </div>
                         </div>
@@ -420,6 +422,94 @@ class App extends React.Component {
                               end. Users can choose an avatar on signup and
                               posts are displayed chronologically with full CRUD
                               operations.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <span className="collapsible-header">
+                        Latenotes
+                        <em className="label">aws</em>
+                      </span>
+                      <div className="collapsible-body">
+                        <div className="content-row">
+                          <div
+                            className="c-4"
+                            onMouseEnter={this.mouseOver.bind(this)}
+                            onMouseLeave={this.mouseOut.bind(this)}
+                          >
+                            <p>
+                              Github: {""}
+                              <a
+                                href="https://github.com/adamGuinea/serverless-client"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                              >
+                                Client
+                              </a>
+                              ,{" "}
+                              <a
+                                href="https://github.com/adamGuinea/serverless"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                              >
+                                API
+                              </a>
+                            </p>
+                            <p>
+                              Website: {""}
+                              <a
+                                href="https://latenotes.com"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                              >
+                                www.latenotes.com
+                              </a>
+                            </p>
+                            {this.state.hover ? (
+                              <picture>
+                                <source
+                                  media={{ maxWidth: 11 }}
+                                  srcSet="/latenotes.jpg"
+                                />
+                                <source
+                                  media={{ maxWidth: "20em" }}
+                                  srcSet="/latenotes.jpg"
+                                />
+                                <img
+                                  className="materialboxed"
+                                  width="650"
+                                  id="img"
+                                  src="/latenotes.jpg"
+                                  alt="latenotes"
+                                />
+                              </picture>
+                            ) : null}
+                          </div>
+                          <div className="c-8">
+                            <p>
+                              Built using Amazon Web Services from a course by{" "}
+                              <a
+                                href="https://serverless-stack.com/"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                              >
+                                Serverless Stack
+                              </a>
+                              . Cognito assists user signup and account
+                              management and S3 handles file uploads and
+                              storage. Notes and attachments are saved to a
+                              DynamoDB database and Cloudfront serves out the
+                              app. Route 53 was used for Domain registration and
+                              connecting user requests to an S3 bucket. Security
+                              is provided by AWS Certificate Manager.
+                            </p>
+                            <p>
+                              This was my first time using Lambda's event driven
+                              approach to running databases combined with Amazon
+                              API Gateway for restful routing. Super excited to
+                              learn more about it.
                             </p>
                           </div>
                         </div>

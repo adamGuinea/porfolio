@@ -312,6 +312,7 @@ h1 span {
 }
 
 .collapsible-header {
+  line-height: 1.2em;
   display: flex;
   border: none;
   padding: 0;
@@ -322,9 +323,8 @@ h1 span {
 .collapsible-header::after {
   content: "\2193";
   position: absolute;
-  top: 0;
   right: 0;
-  bottom: 12px;
+  bottom: 0.1em;
 }
 
 li.active .collapsible-header::after {
@@ -338,6 +338,8 @@ li.active .collapsible-header::after {
 }
 
 .label {
+  font-weight: 400;
+  line-height: 1.65em;
   align-self: flex-end;
   font-size: calc(20px + (24 - 20) * ((100vw - 320px) / (1680 - 320)));
 }
