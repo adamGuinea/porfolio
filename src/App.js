@@ -365,7 +365,7 @@ class App extends React.Component {
                       </div>
                     </li>
                     <li>
-                      <div className="collapsible-header">Chatta </div>
+                      <div className="collapsible-header">DeathRoadTours </div>
                       <div className="collapsible-body">
                         <div className="content-row">
                           <div
@@ -386,11 +386,11 @@ class App extends React.Component {
                             <p>
                               Website: {""}
                               <a
-                                href="https://chatta-client.herokuapp.com"
+                                href="https://deathroadtours.herokuapp.com"
                                 rel="noopener noreferrer"
                                 target="_blank"
                               >
-                                chatta-client
+                                deathroadtours
                               </a>
                             </p>
                             {this.state.hover ? (
