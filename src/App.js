@@ -66,13 +66,13 @@ class App extends React.Component {
                   </h2>
                   <div className="text-news">
                     <p>
-                      Latest app: {""}
+                      Currently working on: {""}
                       <a
-                        href="https://mailplan.herokuapp.com/"
+                        href="https://deathroadtours.herokuapp.com/"
                         rel="noopener noreferrer"
                         target="_blank"
                       >
-                        MailPlan, bulk email surveyor
+                        DeathRoadTours, tour site
                       </a>
                       .
                     </p>
@@ -155,11 +155,14 @@ class App extends React.Component {
                               JS. My API uses Express routing and Mongo DB for
                               data management. Authentication is handled by
                               Google and Webhooks communicate customer feedback
-                              to the user. The client side again uses React,
-                              because I love it, and Redux for state management.
+                              to the user. Email credits can be bought using
+                              Stripe. I also added a news feed which pulls top
+                              headlines and marketing articles from newsapi.org.
                             </p>
                             <p>
-                              This app along with others required an
+                              The client side again uses React, because I love
+                              it, and Redux for state management. SASS makes it
+                              pretty. This app along with others required an
                               understanding of responsive design and how the
                               layers of a project come together through
                               effective architecture.
@@ -295,9 +298,12 @@ class App extends React.Component {
                               Payment processing is handled with Stripe.
                             </p>
                             <p>
-                              Getting this app through testing with Jest and
-                              deployed required collaboration with others and
-                              diving into previously unknown technologies.
+                              Once logged in users can upload items, make
+                              purchases, view past orders and manage account
+                              permissions. Getting this app through testing with
+                              Jest and deployed required collaboration with
+                              others and diving into previously unknown
+                              technologies.
                             </p>
                           </div>
                         </div>
@@ -380,7 +386,7 @@ class App extends React.Component {
                                 rel="noopener noreferrer"
                                 target="_blank"
                               >
-                                Chatta
+                                DeathRoadTours
                               </a>
                             </p>
                             <p>
@@ -397,17 +403,17 @@ class App extends React.Component {
                               <picture>
                                 <source
                                   media={{ maxWidth: 11 }}
-                                  srcSet="/chatta-feed.png"
+                                  srcSet="/deathroadtours.png"
                                 />
                                 <source
                                   media={{ maxWidth: "20em" }}
-                                  srcSet="/chatta-feed.png"
+                                  srcSet="/deathroadtours.png"
                                 />
                                 <img
                                   className="materialboxed"
                                   width="650"
                                   id="img"
-                                  src="/chatta-feed.png"
+                                  src="/deathroadtours.png"
                                   alt="chatta-feed"
                                 />
                               </picture>
@@ -415,13 +421,19 @@ class App extends React.Component {
                           </div>
                           <div className="c-8">
                             <p>
-                              Message board using a MERN stack. Hosted on two
-                              different servers with create-react-app powering
-                              the front end and a Node API handling
-                              authentication and token authorization on the back
-                              end. Users can choose an avatar on signup and
-                              posts are displayed chronologically with full CRUD
-                              operations.
+                              Fictional tour site for a real-life trip I'd like
+                              to do one day. Using a MERN stack with SASS
+                              styling. Hosted on two different servers with
+                              create-react-app powering the front end and a Node
+                              API handling authentication and token
+                              authorization on the back end. Choose a username
+                              and avatar on signup, otherwise you can be an egg.
+                            </p>
+                            <p>
+                              Once signed in you can post on a message board
+                              where posts are displayed chronologically with
+                              full CRUD operations.{" "}
+                              <em>More functionality coming soon</em>
                             </p>
                           </div>
                         </div>
@@ -499,11 +511,11 @@ class App extends React.Component {
                               </a>
                               . Cognito assists user signup and account
                               management and S3 handles file uploads and
-                              storage. Notes and attachments are saved to a
-                              DynamoDB database and Cloudfront serves out the
-                              app. Route 53 was used for Domain registration and
-                              connecting user requests to an S3 bucket. Security
-                              is provided by AWS Certificate Manager.
+                              storage. Notes and attachments are saved with
+                              DynamoDB and CloudFront serves out the app. Route
+                              53 was used for Domain registration and connecting
+                              user requests to an S3 bucket. Security is
+                              provided by AWS Certificate Manager.
                             </p>
                             <p>
                               This was my first time using Lambda's event driven

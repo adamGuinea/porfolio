@@ -477,8 +477,12 @@ ul li {
   }
 }
 
-.c-3 ul {
+.c-3 li {
   text-decoration: underline;
+}
+
+.c-3 li:hover {
+  text-decoration: none;
 }
 
 .profile-footer {
