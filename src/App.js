@@ -228,7 +228,7 @@ class App extends React.Component {
                               uploaded photos. Users can follow each other and
                               receive notifications about their friends activity
                               as well as rate and comment on posts with AJAX
-                              requests.
+                              requests. Sign in as 'Alex', password: user.
                             </p>
                             <p>
                               I love exploring new places, so once I got a
@@ -269,6 +269,7 @@ class App extends React.Component {
                                 stellahart-next
                               </a>
                             </p>
+
                             {this.state.hover ? (
                               <picture>
                                 <source
@@ -295,7 +296,8 @@ class App extends React.Component {
                               MySQL database with Prisma as the interface layer
                               for CRUD operations, as well as GraphQL Yoga to
                               send email and handle authentication logic.
-                              Payment processing is handled with Stripe.
+                              Payment processing is handled with Stripe. Sign in
+                              with user@gmail.com, password: user.
                             </p>
                             <p>
                               Once logged in users can upload items, make
@@ -423,17 +425,18 @@ class App extends React.Component {
                             <p>
                               Fictional tour site for a real-life trip I'd like
                               to do one day. Using a MERN stack with SASS
-                              styling. Hosted on two different servers with
+                              styling it's hosted on two different servers with
                               create-react-app powering the front end and a Node
                               API handling authentication and token
                               authorization on the back end. Choose a username
                               and avatar on signup, otherwise you can be an egg.
+                              Sign in with user@gmail.com, password: user.
                             </p>
                             <p>
                               Once signed in you can post on a message board
                               where posts are displayed chronologically with
                               full CRUD operations.{" "}
-                              <em>More functionality coming soon</em>
+                              <em>More functionality coming soon.</em>
                             </p>
                           </div>
                         </div>
@@ -501,7 +504,8 @@ class App extends React.Component {
                           </div>
                           <div className="c-8">
                             <p>
-                              Built using Amazon Web Services from a course by{" "}
+                              Built using Amazon Web Services from what I
+                              learned on{" "}
                               <a
                                 href="https://serverless-stack.com/"
                                 rel="noopener noreferrer"
@@ -515,7 +519,9 @@ class App extends React.Component {
                               DynamoDB and CloudFront serves out the app. Route
                               53 was used for Domain registration and connecting
                               user requests to an S3 bucket. Security is
-                              provided by AWS Certificate Manager.
+                              provided by AWS Certificate Manager and Stripe
+                              takes care of billing. Currently working on
+                              support for Facebook login.
                             </p>
                             <p>
                               This was my first time using Lambda's event driven
@@ -557,11 +563,11 @@ class App extends React.Component {
                     </p>
                     <p>
                       My passion for writing code started while I was a
-                      mechanical engineer contracting at tech companies across
-                      London. I found it so interesting that I’ve decided to go
-                      through an intensive study period and change my career to
-                      software development. My skill set broadens with every new
-                      project.
+                      mechanical maintenance engineer contracting at tech
+                      companies across London. I found it so interesting that
+                      I’ve decided to go through an intensive study period and
+                      change my career to software development. My skill set
+                      broadens with every new project.
                     </p>
                   </div>
                   <figure className="p-1">
