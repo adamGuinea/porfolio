@@ -33,46 +33,46 @@ class App extends React.Component {
 
   render() {
     return (
-      <div id="page" className="scrollspy">
-        <header className="header">
-          <a className="link-site" href="#page">
+      <div id='page' className='scrollspy'>
+        <header className='header'>
+          <a className='link-site' href='#page'>
             {this.state.isTop ? null : (
-              <i className="tiny material-icons">brightness_1</i>
+              <i className='tiny material-icons'>brightness_1</i>
             )}
             {this.state.isTop ? null : "Adam Guinea"}
           </a>
-          <div className="nav">
+          <div className='nav'>
             <ul>
               <li>
-                <a href="#projects">Projects</a>
+                <a href='#projects'>Projects</a>
               </li>
               <li>
-                <a href="#life">Life</a>
+                <a href='#life'>Life</a>
               </li>
               <li>
-                <a href="#contact">Contact</a>
+                <a href='#contact'>Contact</a>
               </li>
             </ul>
           </div>
-          <section className="section">
-            <div className="container">
-              <div className="content content-100">
-                <div className="content-right">
-                  <h1 className="text-uppercase no-margin">Adam Guinea</h1>
-                  <h2 className="sub-header">
+          <section className='section'>
+            <div className='container'>
+              <div className='content content-100'>
+                <div className='content-right'>
+                  <h1 className='text-uppercase no-margin'>Adam Guinea</h1>
+                  <h2 className='sub-header'>
                     Fitter turned Web Dev.
                     <br />
                     Learning every day.
                   </h2>
-                  <div className="text-news">
+                  <div className='text-news'>
                     <p>
                       Currently working on: {""}
                       <a
-                        href="https://deathroadtours.herokuapp.com/"
-                        rel="noopener noreferrer"
-                        target="_blank"
+                        href='https://github.com/adamGuinea/traveljobs'
+                        rel='noopener noreferrer'
+                        target='_blank'
                       >
-                        DeathRoadTours, tour site
+                        travelJobs, a social hub for expatriates
                       </a>
                       .
                     </p>
@@ -82,40 +82,40 @@ class App extends React.Component {
             </div>
           </section>
         </header>
-        <main className="main">
-          <section className="section">
+        <main className='main'>
+          <section className='section'>
             <a
-              id="projects"
-              className="anchor-content scrollspy"
+              id='projects'
+              className='anchor-content scrollspy'
               href={hrefLink}
             >
               &nbsp;
             </a>
-            <div className="container">
-              <div className="content">
-                <div className="content-right">
-                  <h1 className="text-uppercase">
+            <div className='container'>
+              <div className='content'>
+                <div className='content-right'>
+                  <h1 className='text-uppercase'>
                     Projects
                     <span>2018-2019</span>
                   </h1>
                 </div>
-                <div className="content-left">
-                  <ul className="collapsible">
+                <div className='content-left'>
+                  <ul className='collapsible'>
                     <li>
-                      <div className="collapsible-header">MailPlan </div>
-                      <div className="collapsible-body">
-                        <div className="content-row">
+                      <div className='collapsible-header'>MailPlan </div>
+                      <div className='collapsible-body'>
+                        <div className='content-row'>
                           <div
-                            className="c-4"
+                            className='c-4'
                             onMouseEnter={this.mouseOver.bind(this)}
                             onMouseLeave={this.mouseOut.bind(this)}
                           >
                             <p>
                               Github: {""}
                               <a
-                                href="https://github.com/adamGuinea/mailPlan"
-                                rel="noopener noreferrer"
-                                target="_blank"
+                                href='https://github.com/adamGuinea/mailPlan'
+                                rel='noopener noreferrer'
+                                target='_blank'
                               >
                                 MailPlan
                               </a>
@@ -123,9 +123,9 @@ class App extends React.Component {
                             <p>
                               Website: {""}
                               <a
-                                href="https://mailplan.herokuapp.com"
-                                rel="noopener noreferrer"
-                                target="_blank"
+                                href='https://mailplan.herokuapp.com'
+                                rel='noopener noreferrer'
+                                target='_blank'
                               >
                                 mailplan
                               </a>
@@ -134,22 +134,22 @@ class App extends React.Component {
                               <picture>
                                 <source
                                   media={{ maxWidth: 11 }}
-                                  srcSet="/mailplan-dashboard.png"
+                                  srcSet='/mailplan-dashboard.png'
                                 />
                                 <source
                                   media={{ maxWidth: "20em" }}
-                                  srcSet="/mailplan-dashboard.png"
+                                  srcSet='/mailplan-dashboard.png'
                                 />
                                 <img
-                                  className="materialboxed"
-                                  width="650"
-                                  src="/mailplan-dashboard.png"
-                                  alt="mailplan-landing"
+                                  className='materialboxed'
+                                  width='650'
+                                  src='/mailplan-dashboard.png'
+                                  alt='mailplan-landing'
                                 />
                               </picture>
                             ) : null}
                           </div>
-                          <div className="c-8">
+                          <div className='c-8'>
                             <p>
                               A surveyor for email marketing campaigns in Node
                               JS. My API uses Express routing and Mongo DB for
@@ -172,20 +172,20 @@ class App extends React.Component {
                       </div>
                     </li>
                     <li>
-                      <div className="collapsible-header">TheLongWayHome </div>
-                      <div className="collapsible-body">
-                        <div className="content-row">
+                      <div className='collapsible-header'>TheLongWayHome </div>
+                      <div className='collapsible-body'>
+                        <div className='content-row'>
                           <div
-                            className="c-4"
+                            className='c-4'
                             onMouseEnter={this.mouseOver.bind(this)}
                             onMouseLeave={this.mouseOut.bind(this)}
                           >
                             <p>
                               Github: {""}
                               <a
-                                href="https://github.com/adamGuinea/thelongwayhome"
-                                rel="noopener noreferrer"
-                                target="_blank"
+                                href='https://github.com/adamGuinea/thelongwayhome'
+                                rel='noopener noreferrer'
+                                target='_blank'
                               >
                                 thelongwayhome
                               </a>
@@ -193,9 +193,9 @@ class App extends React.Component {
                             <p>
                               Website: {""}
                               <a
-                                href="https://thelongwayhome.herokuapp.com"
-                                rel="noopener noreferrer"
-                                target="_blank"
+                                href='https://thelongwayhome.herokuapp.com'
+                                rel='noopener noreferrer'
+                                target='_blank'
                               >
                                 thelongwayhome
                               </a>
@@ -204,22 +204,22 @@ class App extends React.Component {
                               <picture>
                                 <source
                                   media={{ maxWidth: 11 }}
-                                  srcSet="/tlwh-show-page.png"
+                                  srcSet='/tlwh-show-page.png'
                                 />
                                 <source
                                   media={{ maxWidth: "20em" }}
-                                  srcSet="/tlwh-show-page.png"
+                                  srcSet='/tlwh-show-page.png'
                                 />
                                 <img
-                                  className="materialboxed"
-                                  width="650"
-                                  src="/tlwh-show-page.png"
-                                  alt="index-page"
+                                  className='materialboxed'
+                                  width='650'
+                                  src='/tlwh-show-page.png'
+                                  alt='index-page'
                                 />
                               </picture>
                             ) : null}
                           </div>
-                          <div className="c-8">
+                          <div className='c-8'>
                             <p>
                               JavaScript site written in Node JS that allows
                               users to post information about their favorite
@@ -241,20 +241,20 @@ class App extends React.Component {
                     </li>
 
                     <li>
-                      <div className="collapsible-header">Stellahart </div>
-                      <div className="collapsible-body">
-                        <div className="content-row">
+                      <div className='collapsible-header'>Stellahart </div>
+                      <div className='collapsible-body'>
+                        <div className='content-row'>
                           <div
-                            className="c-4"
+                            className='c-4'
                             onMouseEnter={this.mouseOver.bind(this)}
                             onMouseLeave={this.mouseOut.bind(this)}
                           >
                             <p>
                               Github: {""}
                               <a
-                                href="https://github.com/adamGuinea/stellahart"
-                                rel="noopener noreferrer"
-                                target="_blank"
+                                href='https://github.com/adamGuinea/stellahart'
+                                rel='noopener noreferrer'
+                                target='_blank'
                               >
                                 Stellahart
                               </a>
@@ -262,9 +262,9 @@ class App extends React.Component {
                             <p>
                               Website: {""}
                               <a
-                                href="https://stellahart-next.herokuapp.com/items"
-                                rel="noopener noreferrer"
-                                target="_blank"
+                                href='https://stellahart-next.herokuapp.com/items'
+                                rel='noopener noreferrer'
+                                target='_blank'
                               >
                                 stellahart-next
                               </a>
@@ -274,22 +274,22 @@ class App extends React.Component {
                               <picture>
                                 <source
                                   media={{ maxWidth: 11 }}
-                                  srcSet="/stellahart.png"
+                                  srcSet='/stellahart.png'
                                 />
                                 <source
                                   media={{ maxWidth: "20em" }}
-                                  srcSet="/stellahart.png"
+                                  srcSet='/stellahart.png'
                                 />
                                 <img
-                                  className="materialboxed"
-                                  width="650"
-                                  src="/stellahart.png"
-                                  alt="store-page"
+                                  className='materialboxed'
+                                  width='650'
+                                  src='/stellahart.png'
+                                  alt='store-page'
                                 />
                               </picture>
                             ) : null}
                           </div>
-                          <div className="c-8">
+                          <div className='c-8'>
                             <p>
                               An online store using a React front end and Apollo
                               Client to handle data caching. This store uses a
@@ -312,23 +312,23 @@ class App extends React.Component {
                       </div>
                     </li>
                     <li>
-                      <div className="collapsible-header">
+                      <div className='collapsible-header'>
                         CRM
-                        <em className="label">mobile</em>
+                        <em className='label'>mobile</em>
                       </div>
-                      <div className="collapsible-body">
-                        <div className="content-row">
+                      <div className='collapsible-body'>
+                        <div className='content-row'>
                           <div
-                            className="c-4"
+                            className='c-4'
                             onMouseEnter={this.mouseOver.bind(this)}
                             onMouseLeave={this.mouseOut.bind(this)}
                           >
                             <p>
                               Github: {""}
                               <a
-                                href="https://github.com/adamGuinea/CRM"
-                                rel="noopener noreferrer"
-                                target="_blank"
+                                href='https://github.com/adamGuinea/CRM'
+                                rel='noopener noreferrer'
+                                target='_blank'
                               >
                                 CRM
                               </a>
@@ -337,23 +337,23 @@ class App extends React.Component {
                               <picture>
                                 <source
                                   media={{ maxWidth: 11 }}
-                                  srcSet="/CRM-screenshot.png"
+                                  srcSet='/CRM-screenshot.png'
                                 />
                                 <source
                                   media={{ maxWidth: "20em" }}
-                                  srcSet="/CRM-screenshot.png"
+                                  srcSet='/CRM-screenshot.png'
                                 />
                                 <img
-                                  className="materialboxed"
-                                  width="650"
-                                  id="img"
-                                  src="/CRM-screenshot.png"
-                                  alt="chatta-feed"
+                                  className='materialboxed'
+                                  width='650'
+                                  id='img'
+                                  src='/CRM-screenshot.png'
+                                  alt='chatta-feed'
                                 />
                               </picture>
                             ) : null}
                           </div>
-                          <div className="c-8">
+                          <div className='c-8'>
                             <p>
                               I liked the idea of building a mobile app without
                               having to learn a completely new language so I
@@ -373,20 +373,20 @@ class App extends React.Component {
                       </div>
                     </li>
                     <li>
-                      <div className="collapsible-header">DeathRoadTours </div>
-                      <div className="collapsible-body">
-                        <div className="content-row">
+                      <div className='collapsible-header'>DeathRoadTours </div>
+                      <div className='collapsible-body'>
+                        <div className='content-row'>
                           <div
-                            className="c-4"
+                            className='c-4'
                             onMouseEnter={this.mouseOver.bind(this)}
                             onMouseLeave={this.mouseOut.bind(this)}
                           >
                             <p>
                               Github: {""}
                               <a
-                                href="https://github.com/adamGuinea/chatta"
-                                rel="noopener noreferrer"
-                                target="_blank"
+                                href='https://github.com/adamGuinea/chatta'
+                                rel='noopener noreferrer'
+                                target='_blank'
                               >
                                 DeathRoadTours
                               </a>
@@ -394,9 +394,9 @@ class App extends React.Component {
                             <p>
                               Website: {""}
                               <a
-                                href="https://deathroadtours.herokuapp.com"
-                                rel="noopener noreferrer"
-                                target="_blank"
+                                href='https://deathroadtours.herokuapp.com'
+                                rel='noopener noreferrer'
+                                target='_blank'
                               >
                                 deathroadtours
                               </a>
@@ -405,23 +405,23 @@ class App extends React.Component {
                               <picture>
                                 <source
                                   media={{ maxWidth: 11 }}
-                                  srcSet="/deathroadtours.png"
+                                  srcSet='/deathroadtours.png'
                                 />
                                 <source
                                   media={{ maxWidth: "20em" }}
-                                  srcSet="/deathroadtours.png"
+                                  srcSet='/deathroadtours.png'
                                 />
                                 <img
-                                  className="materialboxed"
-                                  width="650"
-                                  id="img"
-                                  src="/deathroadtours.png"
-                                  alt="chatta-feed"
+                                  className='materialboxed'
+                                  width='650'
+                                  id='img'
+                                  src='/deathroadtours.png'
+                                  alt='chatta-feed'
                                 />
                               </picture>
                             ) : null}
                           </div>
-                          <div className="c-8">
+                          <div className='c-8'>
                             <p>
                               Fictional tour site for a real-life trip I'd like
                               to do one day. Using a MERN stack with SASS
@@ -443,31 +443,31 @@ class App extends React.Component {
                       </div>
                     </li>
                     <li>
-                      <span className="collapsible-header">
+                      <span className='collapsible-header'>
                         Latenotes
-                        <em className="label">aws</em>
+                        <em className='label'>aws</em>
                       </span>
-                      <div className="collapsible-body">
-                        <div className="content-row">
+                      <div className='collapsible-body'>
+                        <div className='content-row'>
                           <div
-                            className="c-4"
+                            className='c-4'
                             onMouseEnter={this.mouseOver.bind(this)}
                             onMouseLeave={this.mouseOut.bind(this)}
                           >
                             <p>
                               Github: {""}
                               <a
-                                href="https://github.com/adamGuinea/serverless-client"
-                                rel="noopener noreferrer"
-                                target="_blank"
+                                href='https://github.com/adamGuinea/serverless-client'
+                                rel='noopener noreferrer'
+                                target='_blank'
                               >
                                 Client
                               </a>
                               ,{" "}
                               <a
-                                href="https://github.com/adamGuinea/serverless"
-                                rel="noopener noreferrer"
-                                target="_blank"
+                                href='https://github.com/adamGuinea/serverless'
+                                rel='noopener noreferrer'
+                                target='_blank'
                               >
                                 API
                               </a>
@@ -475,9 +475,9 @@ class App extends React.Component {
                             <p>
                               Website: {""}
                               <a
-                                href="https://latenotes.com"
-                                rel="noopener noreferrer"
-                                target="_blank"
+                                href='https://latenotes.com'
+                                rel='noopener noreferrer'
+                                target='_blank'
                               >
                                 www.latenotes.com
                               </a>
@@ -486,30 +486,30 @@ class App extends React.Component {
                               <picture>
                                 <source
                                   media={{ maxWidth: 11 }}
-                                  srcSet="/latenotes.jpg"
+                                  srcSet='/latenotes.jpg'
                                 />
                                 <source
                                   media={{ maxWidth: "20em" }}
-                                  srcSet="/latenotes.jpg"
+                                  srcSet='/latenotes.jpg'
                                 />
                                 <img
-                                  className="materialboxed"
-                                  width="650"
-                                  id="img"
-                                  src="/latenotes.jpg"
-                                  alt="latenotes"
+                                  className='materialboxed'
+                                  width='650'
+                                  id='img'
+                                  src='/latenotes.jpg'
+                                  alt='latenotes'
                                 />
                               </picture>
                             ) : null}
                           </div>
-                          <div className="c-8">
+                          <div className='c-8'>
                             <p>
                               Built using Amazon Web Services from what I
                               learned on{" "}
                               <a
-                                href="https://serverless-stack.com/"
-                                rel="noopener noreferrer"
-                                target="_blank"
+                                href='https://serverless-stack.com/'
+                                rel='noopener noreferrer'
+                                target='_blank'
                               >
                                 Serverless Stack
                               </a>
@@ -538,20 +538,20 @@ class App extends React.Component {
               </div>
             </div>
           </section>
-          <section className="section">
-            <a id="life" href={hrefLink} className="anchor-content scrollspy">
+          <section className='section'>
+            <a id='life' href={hrefLink} className='anchor-content scrollspy'>
               &nbsp;
             </a>
-            <div className="container">
-              <div className="content">
-                <div className="content-right">
-                  <h1 className="text-uppercase">
+            <div className='container'>
+              <div className='content'>
+                <div className='content-right'>
+                  <h1 className='text-uppercase'>
                     Life
                     <span>1991-2019</span>
                   </h1>
                 </div>
-                <div className="content-left">
-                  <div className="content-text">
+                <div className='content-left'>
+                  <div className='content-text'>
                     <p>
                       Developing slick user interfaces and acquiring new skills
                       along the way is exciting to me. I began learning software
@@ -570,76 +570,76 @@ class App extends React.Component {
                       broadens with every new project.
                     </p>
                   </div>
-                  <figure className="p-1">
+                  <figure className='p-1'>
                     <picture>
                       <source
                         media={{ maxWidth: 22.5 }}
-                        srcSet="/petra-profile.jpg"
+                        srcSet='/petra-profile.jpg'
                       />
                       <source
                         media={{
                           maxWidth: "48em"
                         }}
-                        srcSet="/petra-profile.jpg"
+                        srcSet='/petra-profile.jpg'
                       />
-                      <img src="/petra-profile.jpg" alt="profile-pic" />
+                      <img src='/petra-profile.jpg' alt='profile-pic' />
                     </picture>
                   </figure>
                 </div>
               </div>
             </div>
           </section>
-          <section className="section">
+          <section className='section'>
             <a
-              id="contact"
+              id='contact'
               href={hrefLink}
-              className="anchor-content scrollspy"
+              className='anchor-content scrollspy'
             >
               &nbsp;
             </a>
-            <div className="container">
-              <div className="content">
-                <div className="content-right">
-                  <h1 className="text-uppercase">Contact</h1>
+            <div className='container'>
+              <div className='content'>
+                <div className='content-right'>
+                  <h1 className='text-uppercase'>Contact</h1>
                 </div>
-                <div className="content-left">
-                  <div className="content-text">
+                <div className='content-left'>
+                  <div className='content-text'>
                     <h2>
-                      <a href="mailto:adamguinea22@gmail.com">
+                      <a href='mailto:adamguinea22@gmail.com'>
                         adamguinea22@gmail.com
                       </a>
                     </h2>
                   </div>
                 </div>
-                <div className="content-left p-1">
-                  <div className="content-row details">
-                    <div className="c-3">
+                <div className='content-left p-1'>
+                  <div className='content-row details'>
+                    <div className='c-3'>
                       <ul>
                         <li>
                           <a
-                            href="https://linkedin.com/in/adamguinea"
-                            rel="noopener noreferrer"
-                            target="_blank"
+                            href='https://linkedin.com/in/adamguinea'
+                            rel='noopener noreferrer'
+                            target='_blank'
                           >
                             LinkedIn
                           </a>
                         </li>
                         <li>
                           <a
-                            href="https://github.com/adamGuinea"
-                            rel="noopener noreferrer"
-                            target="_blank"
+                            href='https://github.com/adamGuinea'
+                            rel='noopener noreferrer'
+                            target='_blank'
                           >
                             Github
                           </a>
                         </li>
                       </ul>
                     </div>
-                    <div className="c-6">
+                    <div className='c-6'>
                       <p>
                         Shoot me an email! or download my CV{" "}
                         <em>
-                          <a href="/adamGuineaCV.pdf" download>
+                          <a href='/adamGuineaCV.pdf' download>
                             here
                           </a>
                         </em>
@@ -657,11 +657,11 @@ class App extends React.Component {
             </div>
           </section>
         </main>
-        <div className="profile-footer">
-          <div className="container">
-            <ul className="inline-list">
+        <div className='profile-footer'>
+          <div className='container'>
+            <ul className='inline-list'>
               <li>
-                <i className="material-icons">copyright</i>
+                <i className='material-icons'>copyright</i>
                 2019
               </li>
             </ul>
