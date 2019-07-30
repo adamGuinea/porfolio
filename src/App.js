@@ -68,7 +68,7 @@ class App extends React.Component {
                     <p>
                       Currently working on: {""}
                       <a
-                        href='https://github.com/adamGuinea/traveljobs'
+                        href='https://traveljobs.herokuapp.com/'
                         rel='noopener noreferrer'
                         target='_blank'
                       >
@@ -101,6 +101,78 @@ class App extends React.Component {
                 </div>
                 <div className='content-left'>
                   <ul className='collapsible'>
+                    <li>
+                      <div className='collapsible-header'>TravelJobs </div>
+                      <div className='collapsible-body'>
+                        <div className='content-row'>
+                          <div
+                            className='c-4'
+                            onMouseEnter={this.mouseOver.bind(this)}
+                            onMouseLeave={this.mouseOut.bind(this)}
+                          >
+                            <p>
+                              Github: {""}
+                              <a
+                                href='https://github.com/adamGuinea/traveljobs'
+                                rel='noopener noreferrer'
+                                target='_blank'
+                              >
+                                TravelJobs
+                              </a>
+                            </p>
+                            <p>
+                              Website: {""}
+                              <a
+                                href='https://traveljobs.herokuapp.com/'
+                                rel='noopener noreferrer'
+                                target='_blank'
+                              >
+                                travelJobs
+                              </a>
+                            </p>
+                            {this.state.hover ? (
+                              <picture>
+                                <source
+                                  media={{ maxWidth: 11 }}
+                                  srcSet='/traveljobs.png'
+                                />
+                                <source
+                                  media={{ maxWidth: "20em" }}
+                                  srcSet='/traveljobs.png'
+                                />
+                                <img
+                                  className='materialboxed'
+                                  width='650'
+                                  src='/traveljobs.png'
+                                  alt='traveljobs-profile'
+                                />
+                              </picture>
+                            ) : null}
+                          </div>
+                          <div className='c-8'>
+                            <p>
+                              Social hub for working holiday makers. Guests can
+                              browse through profiles without logging in and
+                              once signed up can create their own profile which
+                              details their experiences and education. Entering
+                              a Github username into the profile form will
+                              display your 5 most recent repositories. There is
+                              a message board with like/unlike functionality and
+                              a discussion section for every post.
+                            </p>
+                            <p>
+                              The front-end uses SASS styling, React for
+                              modularity and Redux to keep track of component
+                              state. Unlike my other projects this app uses
+                              solely functional components with the help of
+                              React Hooks. The backend uses MongoDB and Express
+                              along with Express-Validator for server-side form
+                              validation.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
                     <li>
                       <div className='collapsible-header'>MailPlan </div>
                       <div className='collapsible-body'>
@@ -151,9 +223,9 @@ class App extends React.Component {
                           </div>
                           <div className='c-8'>
                             <p>
-                              A surveyor for email marketing campaigns in Node
-                              JS. My API uses Express routing and Mongo DB for
-                              data management. Authentication is handled by
+                              A surveyor for email marketing campaigns in
+                              NodeJS. My API uses Express routing and MongoDB
+                              for data management. Authentication is handled by
                               Google and Webhooks communicate customer feedback
                               to the user. Email credits can be bought using
                               Stripe. I also added a news feed which pulls top
@@ -161,10 +233,10 @@ class App extends React.Component {
                             </p>
                             <p>
                               The client side again uses React, because I love
-                              it, and Redux for state management. SASS makes it
-                              pretty. This app along with others required an
-                              understanding of responsive design and how the
-                              layers of a project come together through
+                              it, and Redux for state management. SASS styling
+                              makes it pretty. This app along with others
+                              required an understanding of responsive design and
+                              how the layers of a project come together through
                               effective architecture.
                             </p>
                           </div>
@@ -204,16 +276,16 @@ class App extends React.Component {
                               <picture>
                                 <source
                                   media={{ maxWidth: 11 }}
-                                  srcSet='/tlwh-show-page.png'
+                                  srcSet='/thelongwayhome.png'
                                 />
                                 <source
                                   media={{ maxWidth: "20em" }}
-                                  srcSet='/tlwh-show-page.png'
+                                  srcSet='/thelongwayhome.png'
                                 />
                                 <img
                                   className='materialboxed'
                                   width='650'
-                                  src='/tlwh-show-page.png'
+                                  src='/thelongwayhome.png'
                                   alt='index-page'
                                 />
                               </picture>
@@ -221,7 +293,7 @@ class App extends React.Component {
                           </div>
                           <div className='c-8'>
                             <p>
-                              JavaScript site written in Node JS that allows
+                              JavaScript site written in NodeJS that allows
                               users to post information about their favorite
                               campsites. Google and Dark Sky's API provides
                               geolocation, weather data, and displays a map for
@@ -291,8 +363,8 @@ class App extends React.Component {
                           </div>
                           <div className='c-8'>
                             <p>
-                              An online store using a React front end and Apollo
-                              Client to handle data caching. This store uses a
+                              An online store using a React front-end and Apollo
+                              Client to handle data queries. This store uses a
                               MySQL database with Prisma as the interface layer
                               for CRUD operations, as well as GraphQL Yoga to
                               send email and handle authentication logic.
@@ -365,8 +437,8 @@ class App extends React.Component {
                               A user can store information about friends or
                               customers where click through calls, email, and
                               SMS make it easy to get in touch. Contact details
-                              are accessible by person name as well as the
-                              company they work for.
+                              are accessible via the person's name as well as
+                              the company they work for.
                             </p>
                           </div>
                         </div>
@@ -426,9 +498,9 @@ class App extends React.Component {
                               Fictional tour site for a real-life trip I'd like
                               to do one day. Using a MERN stack with SASS
                               styling it's hosted on two different servers with
-                              create-react-app powering the front end and a Node
+                              create-react-app powering the front-end and a Node
                               API handling authentication and token
-                              authorization on the back end. Choose a username
+                              authorization on the back-end. Choose a username
                               and avatar on signup, otherwise you can be an egg.
                               Sign in with user@gmail.com, password: user.
                             </p>
@@ -436,7 +508,6 @@ class App extends React.Component {
                               Once signed in you can post on a message board
                               where posts are displayed chronologically with
                               full CRUD operations.{" "}
-                              <em>More functionality coming soon.</em>
                             </p>
                           </div>
                         </div>
