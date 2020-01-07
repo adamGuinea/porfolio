@@ -708,7 +708,7 @@ class App extends React.Component {
                       <p>
                         Shoot me an email! or download my CV{" "}
                         <em>
-                          <a href="/adamGuinea.CV.LOR.pdf" download>
+                          <a href="/adamGuinea-CV-LOR.pdf" download>
                             here
                           </a>
                         </em>
