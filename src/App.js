@@ -1,7 +1,6 @@
 import React from "react";
 import M from "materialize-css";
-import "./App.css";
-
+import "./App.scss";
 let hrefLink = "#";
 
 class App extends React.Component {
@@ -59,7 +58,32 @@ class App extends React.Component {
               <div className="content content-100">
                 <div className="content-right">
                   <h1 className="text-uppercase no-margin">Adam Guinea</h1>
-                  <h2 className="sub-header">
+                  <h2 className='sub-header'>
+                    <span
+                      className='delay'>
+                      Roughly ~80%
+                    </span>{" "}
+                    Front End Developer.
+                    <br />
+                    <slider>
+                      <h2 className="word-slider">
+                        &nbsp;
+                        <span className="word-slider__words">
+                          <span>JavaScript</span>
+                          <span>CSS</span>
+                          <span>AWS</span>
+                          <span>NoSQL</span>
+                          <span>TypeScript</span>
+                          <span>GraphQL</span>
+                          <span>JavaScript</span>
+                        </span>
+                        {" "}
+                        <span className="ml1">Enthusiast.</span>
+
+                      </h2>
+                    </slider>
+                    <br />
+                    <span className="show-sm">JavaScript Enthusiast</span>
                   </h2>
                   <div className="text-news">
                     <p>
