@@ -117,7 +117,7 @@ class App extends React.Component {
                 <div className="content-right">
                   <h1 className="text-uppercase">
                     Projects
-                    <span>2018-2019</span>
+                    <span>2018-2020</span>
                   </h1>
                 </div>
                 <div className="content-left">
@@ -639,7 +639,7 @@ class App extends React.Component {
                 <div className="content-right">
                   <h1 className="text-uppercase">
                     Life
-                    <span>1991-2019</span>
+                    <span>1991-2020</span>
                   </h1>
                 </div>
                 <div className="content-left">
