@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,500,600,700");
+@import url("https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,500,600,700|Mansalva&display=swap");
 
 * {
   box-sizing: border-box;
@@ -213,16 +213,22 @@ h2 {
 }
 
 .delay {
-  animation: fadeInAnimation cubic-bezier(0.5, -0.5, 0.3, 1.3) 6s;
+  animation: fadeInAnimation cubic-bezier(.55,.18,1,.03) 3s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   font-size: 60%;
+  font-family: 'Mansalva', cursive;
 }
 
 @keyframes fadeInAnimation {
   0% {
     opacity: 0;
   }
+
+  80% {
+    opacity: 0;
+  }
+
   100% {
     opacity: 0.5;
   }
@@ -537,31 +543,30 @@ $numberOfUniqueWords: 6;
 
 slider {
   display: flex;
-  --word-size: calc(28px + (48 - 28) * ((100vw - 320px) / (1680 - 320)));
-  --row-gap: 20px;
+  align-items: center;
+
+  --word-size: 40px;
+  --row-gap: 16px;
 }
 
 @media only screen and (max-width: 768px) {
   slider {
-    --word-size: calc(28px + (48 - 28) * ((100vw - 320px) / (1680 - 320)));
+    --word-size: 36px;
   }
 }
 
 @media only screen and (max-width: 30em) {
   slider {
-    display: none;
+   display: none;
   }
 }
 
 .word-slider {
   display: flex;
-  font-weight: 500;
   align-items: center;
-  text-align: right;
   justify-content: flex-end;
   width: 100%;
-  margin: 0;
-  // avoids cutting letters
+  // avoids cutting some letters
   height: calc(var(--word-size) * 1.15);
   font-size: var(--word-size);
   line-height: 1;
@@ -593,10 +598,10 @@ slider {
 @keyframes slide {
   @for $i from 0 through $numberOfUniqueWords {
     @if $i < $numberOfUniqueWords {
-      #{$i/$numberOfUniqueWords*100} {
+      #{$i/$numberOfUniqueWords*100}% {
         @include translateY($i);
       }
-      // "Pause" the animation
+      // pause the animation
       #{$i/$numberOfUniqueWords*100+10}% {
         @include translateY($i);
       }
@@ -604,7 +609,7 @@ slider {
       99.9999% {
         @include translateY($i);
       }
-    // quickly translate to the top
+      // quickly translate to the top
       100% {
         @include initTranslateY();
       }

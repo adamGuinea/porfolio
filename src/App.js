@@ -61,7 +61,7 @@ class App extends React.Component {
                   <h2 className='sub-header'>
                     <span
                       className='delay'>
-                      Roughly ~80%
+                      About ~80%
                     </span>{" "}
                     Front End Developer.
                     <br />
