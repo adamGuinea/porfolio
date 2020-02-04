@@ -57,7 +57,9 @@ class App extends React.Component {
             <div className="container">
               <div className="content content-100">
                 <div className="content-right">
-                  <h1 className="text-uppercase no-margin">Adam Guinea</h1>
+                  <h1 className="text-uppercase no-margin">
+                    Adam <br /> Guinea
+                    </h1>
                   <h2 className='sub-header'>
                     <span
                       className='delay'>
