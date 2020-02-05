@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+import TiltPhoto from './utils/TiltPhoto';
 import M from "materialize-css";
 import "./App.scss";
 import useHideOnScroll from "./utils/useHideOnScroll";
@@ -28,6 +29,12 @@ const App = () => {
       M.AutoInit();
     }
   });
+
+  const options = {
+    max: 10,
+    perspective: 1000,
+    scale: 1.05,
+  }
 
   return (
     <div id="page" className="scrollspy">
@@ -664,21 +671,11 @@ const App = () => {
                     broadens with every new project.
                     </p>
                 </div>
-                <figure className="p-1">
-                  <picture>
-                    <source
-                      media={{ maxWidth: 22.5 }}
-                      srcSet="/petra-profile.jpg"
-                    />
-                    <source
-                      media={{
-                        maxWidth: "48em"
-                      }}
-                      srcSet="/petra-profile.jpg"
-                    />
-                    <img src="/petra-profile.jpg" alt="profile-pic" />
-                  </picture>
-                </figure>
+                  <TiltPhoto
+                    options={options}
+                  >
+                    <img src={'/petra-profile.jpg'} alt="" />
+                  </TiltPhoto>
               </div>
             </div>
           </div>

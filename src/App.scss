@@ -92,6 +92,10 @@ a.anchor-content {
   margin-bottom: 15em;
   overflow: hidden;
 
+  &:nth-of-type(2) {
+    margin-bottom: 10em;
+  }
+
   &:last-of-type {
     padding-top: 5rem;
   }
