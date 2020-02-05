@@ -1,4 +1,4 @@
-import React, {  useState, useLayoutEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import M from "materialize-css";
 import "./App.scss";
 import useHideOnScroll from "./utils/useHideOnScroll";
@@ -19,9 +19,15 @@ const App = () => {
     setHover(false);
   };
 
-  useLayoutEffect(() => {
-    M.AutoInit();
-  }, [])
+  const mounted = useRef();
+
+  useEffect(() => {
+    if (!mounted.current) {
+      mounted.current = true;
+    } else {
+      M.AutoInit();
+    }
+  });
 
   return (
     <div id="page" className="scrollspy">
